@@ -26,7 +26,7 @@ const verifyTheme = (dark: Theme, light: Theme) => {
     const lightError = lightKeys.length ? lightKeys.join(' \n') : 'None'
     const darkError = darkKeys.length ? darkKeys.join(' \n') : 'None'
     throw new Error(
-      `Theme not satisifed. Variables missing in light theme: ${lightError}. Variables missing in dark theme: ${darkError}`,
+      `Theme not saturated. Variables missing in light theme: ${lightError}. Variables missing in dark theme: ${darkError}`,
     )
   }
 }
