@@ -10,6 +10,7 @@ import 'react-toggle/style.css'
 
 import { Moon, Sun } from './Icons'
 import { Theme } from './index'
+import { verifyTheme } from './createTheme'
 
 export type Props = {
   light: Theme
@@ -37,6 +38,8 @@ class DarkTheme extends React.Component<Props, State> {
 
   constructor(props: Props) {
     super(props)
+
+    verifyTheme(props.dark, props.light)
 
     this.state = {
       dark: props.defaultDark,

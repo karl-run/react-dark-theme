@@ -1,6 +1,6 @@
 import { Theme } from './index'
 
-const verifyTheme = (dark: Theme, light: Theme) => {
+export const verifyTheme = (dark: Theme, light: Theme) => {
   const darkKeys: string[] = Object.keys(dark)
   const lightKeys: string[] = Object.keys(light)
 
