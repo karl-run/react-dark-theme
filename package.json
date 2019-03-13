@@ -1,6 +1,6 @@
 {
   "name": "react-dark-theme",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A dark theme toggle button with CSS variables",
   "author": "karl-run",
   "license": "MIT",
