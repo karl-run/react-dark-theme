@@ -11,8 +11,6 @@ import 'react-toggle/style.css'
 import { Moon, Sun } from './Icons'
 import { Theme } from './index'
 
-import css from './styles.module.css'
-
 export type Props = {
   light: Theme
   dark: Theme
@@ -51,17 +49,18 @@ class DarkTheme extends React.Component<Props, State> {
 
   render() {
     return (
-      <div className={`${css.test} ${this.props.className}`}>
+      <>
         <ThemeSwitcher theme={this.state.dark ? this.props.dark : this.props.light} />
         <Toggle
+          className={this.props.className}
           checked={this.state.dark}
           onChange={this.handleToggleChange}
           icons={{
-            checked: <Sun />,
-            unchecked: <Moon />,
+            checked: <Moon />,
+            unchecked: <Sun />,
           }}
         />
-      </div>
+      </>
     )
   }
 }
