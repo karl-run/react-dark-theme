@@ -34,11 +34,13 @@ console.log(cssInJsTheme)
 
 const GlobalStyle = createGlobalStyle`
   body{
+    transition: all 100ms ease-out;
     background-color: ${cssInJsTheme.background};
   }
 `
 
 const Header = styled.header`
+  transition: all 100ms ease-out;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,18 +60,21 @@ const Header = styled.header`
 `
 
 const Title = styled.h1`
+  transition: all 100ms ease-out;
   color: ${cssInJsTheme.text};
   margin-left: 16px;
   font-size: 22px;
 `
 
 const Text = styled.div`
+  transition: all 100ms ease-out;
   color: ${cssInJsTheme.secondaryText};
   font-size: 12px;
   margin: 8px;
 `
 
 const Content = styled.section`
+  transition: all 100ms ease-out;
   padding-top: 1px;
   border-radius: 3px;
   margin: 74px auto 0;
@@ -92,6 +97,7 @@ const Boxes = styled.div`
 `
 
 const Box = styled.div`
+  transition: all 100ms ease-out;
   background-color: ${cssInJsTheme.background};
   flex: 0 1 20%;
   padding: 12px;
