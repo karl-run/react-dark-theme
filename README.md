@@ -16,7 +16,7 @@ npm install --save react-dark-theme
 
 `react-dark-theme` uses [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) because they are really fast. React doesn't need to re-render your entire application when the style changes.
 
-You can use it if you support modern browsers, in doubt? Check [caniuse.com](https://caniuse.com/#feat=css-variables) to make sure.
+You can use it if you support modern browsers. In doubt? Check [caniuse.com](https://caniuse.com/#feat=css-variables) to make sure.
 
 `react-dark-theme` is a button. Use it as you would any button, and provide it two themes.
 
@@ -49,7 +49,7 @@ class Example extends React.Component {
 }
 ```
 
-In your CSS, refer to the names by `var(--yourName`
+In your CSS, refer to the names by `var(--yourName)`
 
 ```css
 body {
@@ -91,7 +91,7 @@ class Example extends React.Component {
 }
 ```
 
-This technique works with any CSS-in-JS library, and should in theory be MUCH faster than those libraries "native" way to handle themes.
+This technique works with any CSS-in-JS library, and should in theory be *much* faster than those libraries' "native" way to handle themes.
 
 ### Props
 
