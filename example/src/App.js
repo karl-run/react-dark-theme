@@ -189,7 +189,7 @@ const App = () => (
           title="github source"
           href="https://github.com/karl-run/react-dark-theme"
           target="_blank"
-          rel="noopener roreferrer"
+          rel="noopener noreferrer"
         >
           <GithubLogo />
         </a>
