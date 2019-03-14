@@ -6,7 +6,7 @@ import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import faker from 'faker'
 
-import DarkTheme, { createTheme } from 'react-dark-theme'
+import DarkTheme, { createTheme, applyTheme } from 'react-dark-theme'
 
 import { ReactComponent as GithubLogo } from './github.svg'
 
@@ -31,6 +31,10 @@ const darkTheme = {
 }
 
 const cssInJsTheme = createTheme(darkTheme, normalTheme)
+
+/* Apply theme at module load time instead of at initial render so that the style is visible much earlier.
+ * Not necessary if you mount your switch early in the life cycle. */
+applyTheme(normalTheme)
 
 console.log(cssInJsTheme)
 

@@ -31,6 +31,12 @@ export const verifyTheme = (dark: Theme, light: Theme) => {
   }
 }
 
+/**
+ * Used to create a map CSS variables in your CSS-in-JS solution. Use these properties as values in your CSS.
+ *
+ * @param dark
+ * @param light
+ */
 function createTheme<T extends Theme>(dark: T, light: T): T {
   verifyTheme(dark, light)
 

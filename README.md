@@ -2,7 +2,7 @@
 
 > A dark theme toggle button with CSS variables
 
-[![NPM](https://img.shields.io/npm/v/react-dark-theme.svg)](https://www.npmjs.com/package/react-dark-theme) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
+[![NPM](https://img.shields.io/npm/v/react-dark-theme.svg)](https://www.npmjs.com/package/react-dark-theme) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/minzip/react-dark-theme.svg)](https://github.com/karl-run/react-dark-theme)
 
 ![example gif](./example.gif)
 
@@ -91,7 +91,30 @@ class Example extends React.Component {
 }
 ```
 
-This technique works with any CSS-in-JS library, and should in theory be *much* faster than those libraries' "native" way to handle themes.
+This technique works with any CSS-in-JS library, and should in theory be _much_ faster than those libraries' "native" way to handle themes.
+
+### My page looks weird while it is loading
+
+If you are unable to load the `<DarkTheme ... />` component early in your life cycle you might see a few frames where your React components are rendered but the CSS variables are not set. The easiest fix for this is to allow `<DarkTheme ... />` to load earlier.
+
+If this isn't an option, you can use `applyTheme(theme)`. Simply invoke this as soon as you define your theme.
+
+```js
+
+import { applyTheme } from 'react-dark-theme'
+
+const darkTheme = {
+  background: #BEEFED,
+}
+
+const normalTheme = {
+  background: #DECADE,
+}
+
+applyTheme(normalTheme)
+```
+
+Make sure to apply your light heme if `defaultDark` is false on your `DarkTheme` component, and apply your dark theme if `defaultDark` is true.
 
 ### Props
 
@@ -110,6 +133,17 @@ This technique works with any CSS-in-JS library, and should in theory be *much* 
 | --------- | :----: | :-----: | --------------------------------------------------------------------------------------------------------- |
 | dark      | Object |  null   | **required** `{ key: value }`-map of variables and their values. Keys _must_ correspond with `lightTheme` |
 | light     | Object |  null   | **required** `{ key: value }`-map of variables and their values. Keys _must_ correspond with `darkTheme`  |
+
+##### applyTheme:
+
+| Parameter |  Type  | Default | Description                                                                                               |
+| --------- | :----: | :-----: | --------------------------------------------------------------------------------------------------------- |
+| dark      | Object |  null   | **required** `{ key: value }`-map of variables and their values. Keys _must_ correspond with `lightTheme` |
+| light     | Object |  null   | **required** `{ key: value }`-map of variables and their values. Keys _must_ correspond with `darkTheme`  |
+
+### How does it work
+
+This library uses [react-css-vars](https://github.com/karl-run/react-css-vars). Look at it's section about how it works. If you want something else than a simple toggle button for your theme (or more than a light and a dark theme) I suggest using `react-css-vars` directly.
 
 ## License
 
