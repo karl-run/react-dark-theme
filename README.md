@@ -114,7 +114,7 @@ const normalTheme = {
 applyTheme(normalTheme)
 ```
 
-Make sure to apply your light heme if `defaultDark` is false on your `DarkTheme` component, and apply your dark theme if `defaultDark` is true.
+Make sure to apply your light theme if `defaultDark` is false on your `DarkTheme` component, and apply your dark theme if `defaultDark` is true.
 
 ### Props
 
@@ -136,10 +136,9 @@ Make sure to apply your light heme if `defaultDark` is false on your `DarkTheme`
 
 ##### applyTheme:
 
-| Parameter |  Type  | Default | Description                                                                                               |
-| --------- | :----: | :-----: | --------------------------------------------------------------------------------------------------------- |
-| dark      | Object |  null   | **required** `{ key: value }`-map of variables and their values. Keys _must_ correspond with `lightTheme` |
-| light     | Object |  null   | **required** `{ key: value }`-map of variables and their values. Keys _must_ correspond with `darkTheme`  |
+| Parameter |  Type  | Default | Description                                                      |
+| --------- | :----: | :-----: | ---------------------------------------------------------------- |
+| theme     | Object |  null   | **required** `{ key: value }`-map of variables and their values. |
 
 ### How does it work
 
