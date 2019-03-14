@@ -1,13 +1,14 @@
 {
   "main.css": "/react-dark-theme/static/css/main.2faa83f2.chunk.css",
-  "main.js": "/react-dark-theme/static/js/main.de6b3231.chunk.js",
-  "main.js.map": "/react-dark-theme/static/js/main.de6b3231.chunk.js.map",
+  "main.js": "/react-dark-theme/static/js/main.32758dc8.chunk.js",
+  "main.js.map": "/react-dark-theme/static/js/main.32758dc8.chunk.js.map",
   "runtime~main.js": "/react-dark-theme/static/js/runtime~main.7cfe321c.js",
   "runtime~main.js.map": "/react-dark-theme/static/js/runtime~main.7cfe321c.js.map",
   "static/js/2.da8fe900.chunk.js": "/react-dark-theme/static/js/2.da8fe900.chunk.js",
   "static/js/2.da8fe900.chunk.js.map": "/react-dark-theme/static/js/2.da8fe900.chunk.js.map",
   "index.html": "/react-dark-theme/index.html",
-  "precache-manifest.55dddb6f17c2f90b3e0c4701665fb282.js": "/react-dark-theme/precache-manifest.55dddb6f17c2f90b3e0c4701665fb282.js",
+  "precache-manifest.5a9e47641b2c62ed2b47258c20aeea3a.js": "/react-dark-theme/precache-manifest.5a9e47641b2c62ed2b47258c20aeea3a.js",
   "service-worker.js": "/react-dark-theme/service-worker.js",
-  "static/css/main.2faa83f2.chunk.css.map": "/react-dark-theme/static/css/main.2faa83f2.chunk.css.map"
+  "static/css/main.2faa83f2.chunk.css.map": "/react-dark-theme/static/css/main.2faa83f2.chunk.css.map",
+  "static/media/github.985dafd5.svg": "/react-dark-theme/static/media/github.985dafd5.svg"
 }
